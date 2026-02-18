@@ -75,7 +75,7 @@ a:visited {
     outline: none;
 }
 
-.filter {
+.filter-column {
     border: 0.15rem black solid;
     background-color: #fff1eb;
     margin: 0 1% 0 2%;
@@ -102,7 +102,115 @@ a:visited {
     width: 32%;
     background-color: #ffffff;
     overflow: auto;
+}
 
+@media (max-width:1140px) {
+    .project {
+        height: 300px;
+        width: 31%;
+    }
+}
+
+@media (max-width:940px) {
+    h3 {
+        font-size: 0.8rem;
+        margin-top: 3px;
+    }
+
+    h4 {
+        font-size: 0.7rem;
+        color: #b49cfc;
+    }
+
+    p {
+        font-size: 0.6rem;
+        margin-top: 3px;
+        margin-bottom: 1px;
+    }
+
+    label {
+        font-size: 0.8rem;
+    }
+
+    input {
+        height: 0.8rem;
+    }
+
+    .underline {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:750px) {
+    .project {
+        min-width: 45%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    label {
+        font-size: 0.6rem;
+    }
+
+    input {
+        height: 0.6rem;
+
+    }
+
+    .underline {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (max-width:576px) {
+
+    .filter-column,
+    .projects-column {
+        margin: 5px 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    label {
+        font-size: 0.8rem;
+        margin: 5px 0 3px 0;
+
+    }
+
+    input {
+        height: 0.8rem;
+
+    }
+
+    .underline {
+        font-size: 0.9rem;
+    }
+
+    body {
+        line-height: 0.6rem;
+    }
+
+    .project {
+        min-width: 98%;
+        height: 400px;
+    }
+
+    .project-image {
+        max-height: 250px;
+    }
 }
 
 .project p {
