@@ -1,0 +1,144 @@
+body {
+    height: 100%;
+    font-family: "Chivo Mono", monospace;
+    background-position: absolute;
+    background-size: cover;
+    background-image: url("images/grid.png"), linear-gradient(130deg, rgba(255, 214, 255, 1) 0%, rgba(231, 198, 255, 1) 50%, rgba(187, 208, 255, 1) 100%);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 0.9rem;
+    line-height: 0.7rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    padding: 3px;
+    margin-top: 5px;
+    border: 0.15rem black solid;
+    background-image: linear-gradient(130deg, #C8B6FF 0%, rgba(231, 198, 255, 1) 50%, rgba(187, 208, 255, 1) 100%);
+}
+
+h3 {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+h4 {
+    font-size: 0.8rem;
+    color: #b49cfc;
+}
+
+p {
+    margin-top: 3px;
+    margin-bottom: 1px;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.home-top-col-left {
+    margin: auto 0;
+}
+
+.bttn {
+    color: black;
+    border: 1px black solid;
+    background-color: #C8B6FF;
+    transition: all 0.2s;
+    outline: none;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 5px 10px;
+}
+
+.bttn:hover {
+    outline: none;
+    filter: drop-shadow(5px 5px 0px #b49cfc);
+}
+
+.bttn:focus {
+    border: 1px black solid;
+    outline: none;
+}
+
+.filter {
+    border: 0.15rem black solid;
+    background-color: #fff1eb;
+    margin: 0 1% 0 2%;
+    height: fit-content;
+}
+
+.projects-column {
+    border: 0.15rem black solid;
+    background-color: #fff1eb;
+    margin: 0 2% 0 1%;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project {
+    border: 0.15rem black solid;
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 10px;
+    height: 350px;
+    width: 32%;
+    background-color: #ffffff;
+    overflow: auto;
+
+}
+
+.project p {
+    margin: 5px;
+}
+
+.project-image {
+    max-width: 95%;
+    margin: 10px auto;
+    display: block;
+    outline: 0.15rem rgba(0, 0, 0, 0) solid;
+    transition: all 0.2s;
+}
+
+.project-image:hover {
+    outline: 0.15rem black solid;
+}
+
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag {
+    font-size: 0.8rem;
+    color: black;
+    border: 1px black solid;
+    margin: 2px;
+    background-color: #B8C0FF;
+    padding: 2px;
+}
+
+.tag:nth-of-type(2n) {
+    background-color: #FFD6FF;
+}
+
+.tag:nth-of-type(3n) {
+    background-color: #E7C6FF;
+}
