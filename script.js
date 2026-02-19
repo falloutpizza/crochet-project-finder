@@ -1,5 +1,3 @@
-
-//must use sharing link
 const projects = [
     { title: "easy customisable cardigan", author: "Katieree", link: "https://youtu.be/Rp4aZaI3Hd0?si=xTquzEntL3aC7poe", tags: ["beginner", "clothing", "500+g"] },
     { title: "shrug/sleeves", author: "75 emma", link: "https://youtu.be/m265qgMjNBI?si=fckj3rWGAN9k0dpN", tags: ["beginner", "clothing", "300-500g"] },
@@ -135,7 +133,6 @@ const projects = [
     { title: "braid bag", author: "Daniela", link: "https://youtu.be/piJN-CcYf0c?si=SobJfplPaueyflg9", tags: ["beginner", "bags", "100-300g"] },
 ]
 
-
 function createProject(projectObject) {
     const parentDiv = document.createElement("div");
     const heading = document.createElement("h3");
@@ -149,7 +146,6 @@ function createProject(projectObject) {
     if (endIndex === -1) {
         endIndex = projectObject.length;
     }
-    console.log(endIndex)
     let videoCode = projectObject.link.slice(17, endIndex);
     let imageLink = `https://img.youtube.com/vi/${videoCode}/0.jpg`;
 
@@ -218,10 +214,12 @@ function filterByTag(tags) {
 
 //initial render
 
+let endProj = 20
+let filteredProjects = projects.slice();
 numProj = document.getElementById("num-proj");
 numProj.textContent = projects.length;
 
-for (let i = 0; i < projects.length; i++) {
+for (let i = 0; i < endProj; i++) {
     let curProj = createProject(projects[i]);
     renderProject(curProj)
 }
@@ -231,7 +229,6 @@ document.getElementById("filter-form").addEventListener("submit", function (e) {
 
     const tags = document.getElementsByClassName("tag-check");
     const tagList = [];
-    let filteredProjects = projects.slice();
     let selected = 0;
 
     for (let i = 0; i < tags.length; i++) {
@@ -243,13 +240,22 @@ document.getElementById("filter-form").addEventListener("submit", function (e) {
 
     if (selected !== 0) {
         filteredProjects = filterByTag(tagList);
+        if (filteredProjects.length < endProj) {
+            endProj = filteredProjects.length;
+        } else {
+            endProj = 20;
+        }
+    } else {
+        filteredProjects = projects.slice();
+        endProj = 20;
     }
 
     //clear current projects first
     const container = document.getElementById("project-container");
     container.innerHTML = "";
 
-    for (let i = 0; i < filteredProjects.length; i++) {
+    //display first 20 projects, or until end, whichever comes first
+    for (let i = 0; i < endProj; i++) {
         let curProjElement = createProject(filteredProjects[i]);
         renderProject(curProjElement);
     }
@@ -257,4 +263,21 @@ document.getElementById("filter-form").addEventListener("submit", function (e) {
     numProj = document.getElementById("num-proj");
     numProj.textContent = filteredProjects.length;
 
+});
+
+window.addEventListener('scroll', () => {
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        //increment endProj
+        let curProj = endProj
+        endProj += 20;
+        if (endProj > filteredProjects.length) { endProj = filteredProjects.length }
+
+
+        //display first 20 projects, or until end, whichever comes first
+        for (let i = curProj; i < endProj; i++) {
+            let curProjElement = createProject(filteredProjects[i]);
+            renderProject(curProjElement);
+        }
+
+    }
 });
