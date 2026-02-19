@@ -1,5 +1,3 @@
-
-//must use sharing link
 const projects = [
     { title: "easy customisable cardigan", author: "Katieree", link: "https://youtu.be/Rp4aZaI3Hd0?si=xTquzEntL3aC7poe", tags: ["beginner", "clothing", "500+g"] },
     { title: "shrug/sleeves", author: "75 emma", link: "https://youtu.be/m265qgMjNBI?si=fckj3rWGAN9k0dpN", tags: ["beginner", "clothing", "300-500g"] },
@@ -102,13 +100,13 @@ const projects = [
     { title: "treble crochet mesh top", author: "ABoC Studio", link: "https://youtu.be/CVQLtgMRwSI?si=DZeI76DoLcWx4WCB", tags: ["intermediate", "clothing", "100-300g"] },
     { title: "rose bouquet blanket", author: "ABoC Studio", link: "https://youtu.be/-NWmipxZLwM?si=134GWsQdaS2zPvb5", tags: ["beginner", "room decor", "500+g"] },
     { title: "tulip cardigan", author: "The Yarnling", link: "https://youtu.be/SCJnD_4pqCI?si=Z1z5zb09J4b2xaQm", tags: ["beginner", "clothing", "300-500g"] },
-    { title: "amigurumi heart", author: "VivCrochets", link: "https://youtu.be/DeLv-kO4HJk?si=8k092iks3ke6UEv5", tags: ["beginner", "amigurumi", "<50g"] },
-    { title: "cute octopus", author: "Artisan Gift Collection", link: "https://youtu.be/gyAym-kZFhk?si=PyrWdRGdbAsGaFRm", tags: ["beginner", "amigurumi", "<50g"] },
+    { title: "amigurumi heart", author: "VivCrochets", link: "https://youtu.be/DeLv-kO4HJk?si=8k092iks3ke6UEv5", tags: ["beginner", "amigurumi", "<50g", "<1hr"] },
+    { title: "cute octopus", author: "Artisan Gift Collection", link: "https://youtu.be/gyAym-kZFhk?si=PyrWdRGdbAsGaFRm", tags: ["beginner", "amigurumi", "<50g", "<1hr"] },
     { title: "sea turtle", author: "CJ Design", link: "https://youtu.be/Q2aIpN8gqfM?si=l8OCQD1Z8ZNVhGhj", tags: ["beginner", "amigurumi", "<50g"] },
     { title: "teddy bear", author: "Avocado Handmade", link: "https://youtu.be/tPd8sFNlgwU?si=pslfnR1Lq9agN7tP", tags: ["beginner", "amigurumi", "<50g"] },
     { title: "cute bunny holding a heart", author: "mahum", link: "https://youtu.be/TlBMcexUwjE?si=s8wOW2cIyMi06mVU", tags: ["beginner", "amigurumi", "<50g"] },
-    { title: "mini loaf chicken", author: "Maddy Marie", link: "https://youtu.be/1zE0Edn9LVo?si=KK5X-0kDJRCtWMjj", tags: ["beginner", "amigurumi", "<50g"] },
-    { title: "cat and heart keychain", author: "chubbiesbyash", link: "https://youtu.be/1fWMt5uCzWc?si=6W0f7FZxy7ajJ4MB", tags: ["beginner", "amigurumi", "<50g"] },
+    { title: "mini loaf chicken", author: "Maddy Marie", link: "https://youtu.be/1zE0Edn9LVo?si=KK5X-0kDJRCtWMjj", tags: ["beginner", "amigurumi", "<50g", "<1hr"] },
+    { title: "cat and heart keychain", author: "chubbiesbyash", link: "https://youtu.be/1fWMt5uCzWc?si=6W0f7FZxy7ajJ4MB", tags: ["beginner", "amigurumi", "<50g", "<1hr"] },
     { title: "stingray", author: "Theresa's Crochet Shop", link: "https://youtu.be/0FyWso2WaMI?si=FWc1v65xAtdAFUu6", tags: ["beginner", "amigurumi", "<50g"] },
     { title: "doll base body", author: "GretaWings DIY", link: "https://youtu.be/I1-HpjU3zGk?si=i1_FLnryiqJA4mRI", tags: ["beginner", "intermediate", "amigurumi", "<50g"] },
     { title: "nick and judy keychains", author: "Chubby Cheeks", link: "https://youtu.be/aJwsXOor3CI?si=ulSo6LouSa9kIDC9", tags: ["beginner", "amigurumi", "<50g"] },
@@ -116,13 +114,13 @@ const projects = [
     { title: "strawberry pillow", author: "Avalon Crochets", link: "https://youtu.be/Qo8QFcWWYTs?si=MOBxhBZG6yP8uDB4", tags: ["beginner", "amigurumi", "room decor", "100-300g"] },
     { title: "crochet dragon", author: "CrochetByGenna", link: "https://youtu.be/iTyFFSo5kpY?si=p3_KWOoDcRCLbbmA", tags: ["intermediate", "amigurumi", "50-100g", "100-300g"] },
     { title: "nature-themed room decor", author: "mahum", link: "https://youtu.be/CxmYN58qCmM?si=MTA9FGGsNmNkxPnc", tags: ["beginner", "room decor", "100-300g"] },
-    { title: "wall decor: bow necklace organiser, heart hanging decor", author: "mahum", link: "https://youtu.be/eWri7PruTlQ?si=WKjrfpuFBogJ5nZi", tags: ["beginner", "room decor", "<50g", "50-100g"] },
+    { title: "wall decor: bow necklace organiser, heart hanging decor", author: "mahum", link: "https://youtu.be/eWri7PruTlQ?si=WKjrfpuFBogJ5nZi", tags: ["beginner", "room decor", "<50g", "50-100g", "<1hr"] },
     { title: "cushions, bow garland, & bedside decor", author: "mahum", link: "https://youtu.be/hPfk7jxBf1g?si=t7feE9Z1hVQTKn7O", tags: ["beginner", "room decor", "100-300g"] },
-    { title: "crochet lily with leaves", author: "mahum", link: "https://youtu.be/Wd0IweaXoRQ?si=FcegsIMGgiBe-VX2", tags: ["beginner", "room decor", "<50g", "flowers"] },
+    { title: "crochet lily with leaves", author: "mahum", link: "https://youtu.be/Wd0IweaXoRQ?si=FcegsIMGgiBe-VX2", tags: ["beginner", "room decor", "<50g", "flowers", "<1hr"] },
     { title: "cute flower pot, cottage jar, & bear pencil holder decor", author: "mahum", link: "https://youtu.be/NyCv0fpHrgw?si=SjQDv6Wi6fmqDOGv", tags: ["beginner", "room decor", "50-100g", "flowers"] },
     { title: "heart-shaped cushion/pillow", author: "mahum", link: "https://youtu.be/Ki1pc6_M-8M?si=INnq7tt8IYVYQ1KQ", tags: ["beginner", "room decor", "300-500g"] },
     { title: "cake tissue box tutorial|strawberry shortcake decor", author: "mahum", link: "https://youtu.be/j5faxyfCwVU?si=JvBrQp6YmSXircCH", tags: ["beginner", "room decor", "100-300g", "50-100g"] },
-    { title: "cute cake box & lily pad coasters", author: "mahum", link: "https://youtu.be/4rmSBz085nk?si=5-cajHLX2Mt1P9U5", tags: ["beginner", "room decor", "50-100g", "<50g"] },
+    { title: "cute cake box & lily pad coasters", author: "mahum", link: "https://youtu.be/4rmSBz085nk?si=5-cajHLX2Mt1P9U5", tags: ["beginner", "room decor", "50-100g", "<50g", "<1hr"] },
     { title: "flower table mat/rug", author: "mahum", link: "https://youtu.be/XmCb4pGKWoY?si=Sd_9TBvG4X-4lD9U", tags: ["beginner", "room decor", "100-300g"] },
     { title: "mesh bag", author: "mahum", link: "https://youtu.be/Um82jehMQKY?si=M7wSORDSluKKZaqp", tags: ["beginner", "bags", "50-100g"] },
     { title: "simple tote bag", author: "VivCrochets", link: "https://youtu.be/ECWzJSS4OD4?si=ZlPYfYGxnkW5Jcsj", tags: ["beginner", "bags", "100-300g"] },
@@ -133,10 +131,7 @@ const projects = [
     { title: "waffle bag", author: "Daniela", link: "https://youtu.be/Xjd1DpMxEMw?si=p7BMKzt5gKLiwb6e", tags: ["beginner", "bags", "50-100g"] },
     { title: "charles and keith inspired crochet bag", author: "thatcrochetguy", link: "https://youtu.be/sfPXeoLUqVU?si=ZZuESESM9MzCipbE", tags: ["beginner", "bags", "100-300g"] },
     { title: "braid bag", author: "Daniela", link: "https://youtu.be/piJN-CcYf0c?si=SobJfplPaueyflg9", tags: ["beginner", "bags", "100-300g"] },
-    { title: "flower table mat/rug", author: "mahum", link: "https://youtu.be/XmCb4pGKWoY?si=Sd_9TBvG4X-4lD9U", tags: ["beginner", "room decor", "100-300g"] },
-
 ]
-
 
 function createProject(projectObject) {
     const parentDiv = document.createElement("div");
@@ -151,7 +146,6 @@ function createProject(projectObject) {
     if (endIndex === -1) {
         endIndex = projectObject.length;
     }
-    console.log(endIndex)
     let videoCode = projectObject.link.slice(17, endIndex);
     let imageLink = `https://img.youtube.com/vi/${videoCode}/0.jpg`;
 
@@ -220,10 +214,12 @@ function filterByTag(tags) {
 
 //initial render
 
+let endProj = 20
+let filteredProjects = projects.slice();
 numProj = document.getElementById("num-proj");
 numProj.textContent = projects.length;
 
-for (let i = 0; i < projects.length; i++) {
+for (let i = 0; i < endProj; i++) {
     let curProj = createProject(projects[i]);
     renderProject(curProj)
 }
@@ -233,7 +229,6 @@ document.getElementById("filter-form").addEventListener("submit", function (e) {
 
     const tags = document.getElementsByClassName("tag-check");
     const tagList = [];
-    let filteredProjects = projects.slice();
     let selected = 0;
 
     for (let i = 0; i < tags.length; i++) {
@@ -245,13 +240,22 @@ document.getElementById("filter-form").addEventListener("submit", function (e) {
 
     if (selected !== 0) {
         filteredProjects = filterByTag(tagList);
+        if (filteredProjects.length < endProj) {
+            endProj = filteredProjects.length;
+        } else {
+            endProj = 20;
+        }
+    } else {
+        filteredProjects = projects.slice();
+        endProj = 20;
     }
 
     //clear current projects first
     const container = document.getElementById("project-container");
     container.innerHTML = "";
 
-    for (let i = 0; i < filteredProjects.length; i++) {
+    //display first 20 projects, or until end, whichever comes first
+    for (let i = 0; i < endProj; i++) {
         let curProjElement = createProject(filteredProjects[i]);
         renderProject(curProjElement);
     }
@@ -259,4 +263,21 @@ document.getElementById("filter-form").addEventListener("submit", function (e) {
     numProj = document.getElementById("num-proj");
     numProj.textContent = filteredProjects.length;
 
+});
+
+window.addEventListener('scroll', () => {
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        //increment endProj
+        let curProj = endProj
+        endProj += 20;
+        if (endProj > filteredProjects.length) { endProj = filteredProjects.length }
+
+
+        //display first 20 projects, or until end, whichever comes first
+        for (let i = curProj; i < endProj; i++) {
+            let curProjElement = createProject(filteredProjects[i]);
+            renderProject(curProjElement);
+        }
+
+    }
 });
