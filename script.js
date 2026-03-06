@@ -199,10 +199,10 @@ function renderProject(parentDiv) {
 function filterByTag(tags) {
     filteredProjects = []
     for (let i = 0; i < projects.length; i++) {
-        let contains = true;
+        let contains = false;
         for (let j = 0; j < tags.length; j++) {
-            if (projects[i].tags.includes(tags[j]) == false) {
-                contains = false;
+            if (projects[i].tags.includes(tags[j]) == true) {
+                contains = true;
             }
         }
         if (contains == true) {
@@ -280,4 +280,8 @@ window.addEventListener('scroll', () => {
         }
 
     }
+<<<<<<< responsive
 });
+=======
+});
+>>>>>>> main
