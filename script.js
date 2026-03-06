@@ -194,6 +194,7 @@ function createProject(projectObject) {
 function renderProject(parentDiv) {
     const container = document.getElementById("project-container");
     container.appendChild(parentDiv);
+    console.log("hello??")
 }
 
 function filterByTag(tags) {
