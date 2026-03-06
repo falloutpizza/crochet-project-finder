@@ -280,4 +280,8 @@ window.addEventListener('scroll', () => {
         }
 
     }
+<<<<<<< responsive
 });
+=======
+});
+>>>>>>> main
